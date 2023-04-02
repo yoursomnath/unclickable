@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sora:wght@500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Sora', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: orange;
+}
+h1{
+  text-align: center;
+  width: 100%;
+  font-size: 23px;
+}
+.container{
+  height: 600px;
+  width: 400px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("bgimg.jpg");
+  box-shadow: 0 0 30px black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  grid-gap: 30%;
+  justify-content: space-around;
+  flex-direction: column;
+  color: white;
+}
+.btn-div{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn-div .btn{
+  height: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  font-weight: 1000;
+  justify-content: center;
+  color: black;
+  text-transform: uppercase;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 20px black;
+  transition: 0.1s all;
+}

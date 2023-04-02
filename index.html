@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Click Me!</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Are You Fool ??</h1>
+    <div class="btn-div">
+      <div class="yes btn">yes</div>
+      <div class="no btn">no</div>
+    </div>
+  </div>
+</body>
+<script>
+  let noBtn = document.querySelector(".no");
+  let yesBtn = document.querySelector(".yes");
+  let text = document.querySelector("h1");
+  let audio1 = new Audio("sfx1.mp3");
+  let audio2 = new Audio("sfx2.mp3");
+  const yourName = prompt("Enter Your Name");
+
+  text.innerHTML = ""+yourName+", are You Fool ??";
+  noBtn.addEventListener("mouseover", event=>{
+    let num1 = Math.floor(Math.random()*400);
+    let num2 = Math.floor(Math.random()*500);
+    if(num1<=50){num1*=10}
+    noBtn.style.transform = "translateX(-"+num1+"px) translateY(-"+num2+"px)";
+    console.log(num1);
+    console.log(num2);
+    audio1.play();
+  })
+  noBtn.addEventListener('click',event=>{
+    alert("F**k You !!")
+  })
+  yesBtn.addEventListener('click',evetn => {
+    audio2.play();
+    alert("I Knew It 😂😂😂😂");
+  })
+</script>
+</html>
